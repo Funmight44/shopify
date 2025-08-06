@@ -1,11 +1,13 @@
 import { useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import UseTitle from "../../components/useTitle";
 
 
 const OrderSuccess = () => {
     const navigate = useNavigate()
     const location = useLocation()
     const state = location.state
+    UseTitle("Order Success")
   
   useEffect(() => {
     if (!state) {

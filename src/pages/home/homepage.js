@@ -3,9 +3,12 @@ import { productStockData } from "../../data";
 import { productData } from "../../data";
 import { useEffect, useState } from "react";
 import Card from "../../components/card";
+import UseTitle from "../../components/useTitle";
 
 const HomePage = () => {
     const [product, setproduct] = useState([]);
+    UseTitle("Home")
+
     useEffect(() => {
         const data = productData.slice(0, 8)
         setproduct(data)

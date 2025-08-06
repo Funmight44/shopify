@@ -2,12 +2,13 @@ import { Link } from "react-router";
 import { useCart } from "../../context";
 import { useState } from "react";
 import CheckOut from "../../components/checkout";
+import UseTitle from "../../components/useTitle";
 
 const CartList = () => {
     const {cart, clearCart, removeFromCart, total} =useCart();
     const [checkout, setCheckout] = useState(false)
 
-
+    UseTitle("CartList")
 
     return ( 
         <section className="cart-cont">

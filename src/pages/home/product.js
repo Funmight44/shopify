@@ -1,9 +1,11 @@
 import { useState } from "react";
 import Card from "../../components/card";
 import { productData } from "../../data";
+import UseTitle from "../../components/useTitle";
 
 const Products = () => {
   const [products, setProducts] = useState(productData);
+  UseTitle("Product")
 
   const filterProducts = (category) => {
     const filtered = productData.filter((item) => item.category.toLowerCase() === category.toLowerCase());
