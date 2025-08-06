@@ -3,12 +3,26 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router';
+import { Auth0Provider } from '@auth0/auth0-react';
+import { CartProvider } from './context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <Auth0Provider
+    domain="dev-7mxdre47q4grkp2o.us.auth0.com"
+    clientId="Je2TJNA2EUEWDqiDSbUEwp4b80fSXezD"
+    authorizationParams={{
+      redirect_uri: window.location.origin
+    }}>
+      <CartProvider>
+        <BrowserRouter>
+           <App />
+        </BrowserRouter>
+      </CartProvider>
+       
+  </Auth0Provider>,
+
 );
 
 // If you want to start measuring performance in your app, pass a function
