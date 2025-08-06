@@ -100,6 +100,10 @@ nav .icons {
   cursor: pointer;
 }
 
+nav .icons .Link{
+  text-decoration: none;
+}
+
 .cart-link{
   position: relative;
 }
@@ -126,9 +130,14 @@ header .bottom-nav{
   gap: 20px;
 }
 
-.nav-bar link{
+.nav-bar .Link{
   text-decoration: none;
 }
+
+.nav-bar .Link p:hover{
+  color: #c5585f;
+}
+
 
 .nav-bar  p{
    color: #111;
@@ -405,7 +414,7 @@ header .bottom-nav{
   .product-cont .product-icons{
   
   top: 10px ;
-  left: 210px;
+  left: 220px;
   z-index: 1;
 }
 }

@@ -44,19 +44,19 @@ const Header = () => {
                 </div>}
                 
                 <div className="icons">
-                     <Link to="/"><i class="bi bi-balloon-heart"></i></Link> 
+                     <Link to="/" className="Link"><i class="bi bi-balloon-heart" ></i></Link> 
                      <div className="cart-link">
-                         <Link to="/cart"> <i class="bi bi-cart"></i></Link>
+                         <Link to="/cart" className="Link"> <i class="bi bi-cart"></i></Link>
                      </div>   
                      <span>{cart.length}</span>  
                 </div>
             </nav>
             <div className="bottom-nav">
                 <div className="nav-bar">
-                    <Link to="/"><p>Home</p></Link>
-                    <Link to="/products"><p>Products</p></Link>
-                    <Link to="/about"><p>About</p></Link>
-                    <Link to="/contact"><p>Contact</p></Link>
+                    <Link to="/" className="Link"><p>Home</p></Link>
+                    <Link to="/products" className="Link"><p>Products</p></Link>
+                    <Link to="/about" className="Link"><p>About</p></Link>
+                    <Link to="/contact" className="Link"><p>Contact</p></Link>
                 </div>
                 <div className="log-cont">
                     {isAuthenticated ? <i class="bi bi-box-arrow-in-right" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}></i>
