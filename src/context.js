@@ -13,11 +13,13 @@ export const CartProvider = ({children}) => {
     const [total, setTotal] = useState()
        
     function addToCart(product){
-            setCart((item) => [...item, product] )
+            setCart((item) => [...item, product])
+            alert("Added")
         }
 
         function removeFromCart(id){
             setCart(cart.filter((item) => item.id !== id))
+            alert("Removed")
         }
 
 
