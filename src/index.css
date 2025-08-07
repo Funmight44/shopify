@@ -139,7 +139,10 @@ header .bottom-nav{
 }
 
 .nav-bar .Link p:hover{
-  color: #c5585f;
+  background-color: #c5585f;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 
