@@ -2,12 +2,15 @@ import { FaTruckMoving } from "react-icons/fa";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 import { useState } from "react";
+import { useCart } from "../context";
+
 
 
 const Header = () => {
     const { loginWithRedirect, logout, user, isAuthenticated} = useAuth0();
     const [searchParams] = useSearchParams()
     const navigate = useNavigate();
+    const {cart} = useCart
 
      const [query, setQuery] = useState(searchParams.get("query") || "");
   
