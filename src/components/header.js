@@ -10,7 +10,7 @@ const Header = () => {
     const { loginWithRedirect, logout, user, isAuthenticated} = useAuth0();
     const [searchParams] = useSearchParams()
     const navigate = useNavigate();
-    const {cart} = useCart
+    const {cart} = useCart()
 
      const [query, setQuery] = useState(searchParams.get("query") || "");
   
@@ -49,10 +49,10 @@ const Header = () => {
                 <div className="icons">
                      <Link to="/" className="Link"><i class="bi bi-balloon-heart" ></i></Link> 
                      <div className="cart-link">
-                        {isAuthenticated ? <Link to="/cart" className="Link"> <i class="bi bi-cart"></i></Link>:
-                        <i class="bi bi-cart" onClick={() => loginWithRedirect()}></i>}
-                     </div>   
-                     <span>{cart.length}</span>  
+                        {isAuthenticated ? (<><Link to="/cart" className="Link"> <i class="bi bi-cart"></i></Link>
+                            <span>{cart.length}</span>  </>):
+                        (<i class="bi bi-cart" onClick={() => loginWithRedirect()}></i>)}
+                     </div>       
                 </div>
             </nav>
             <div className="bottom-nav">

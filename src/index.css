@@ -112,7 +112,7 @@ nav .icons .Link{
   text-decoration: none;
 }
 
-.icons span{
+.cart-link span{
   position: absolute;
   top: 70px;
   right: 50px;
@@ -173,7 +173,7 @@ header .bottom-nav{
   .logo-container h3{
     font-size: 15px;
   }
-    .icons span{
+    .cart-link span{
       position: absolute;
       top: 50px;
       right: 20px;
