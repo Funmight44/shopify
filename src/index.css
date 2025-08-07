@@ -104,18 +104,27 @@ nav .icons .Link{
   text-decoration: none;
 }
 
-.cart-link{
+.cart-icon-with-badge {
   position: relative;
+  display: inline-block;
 }
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+}
+
 
 .cart-link .Link{
   text-decoration: none;
-}
-
-.cart-link span{
-  position: absolute;
-  top: 70px;
-  right: 50px;
 }
 
 
@@ -173,11 +182,7 @@ header .bottom-nav{
   .logo-container h3{
     font-size: 15px;
   }
-    .cart-link span{
-      position: absolute;
-      top: 50px;
-      right: 20px;
-  }
+    
   header .bottom-nav{
     padding: 10px;
   }
