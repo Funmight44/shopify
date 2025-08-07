@@ -104,12 +104,12 @@ nav .icons .Link{
   text-decoration: none;
 }
 
-.cart-icon-with-badge {
+.cart-link .cart-icon-with-badge {
   position: relative;
   display: inline-block;
 }
 
-.cart-badge {
+.cart-link .cart-badge {
   position: absolute;
   top: -8px;
   right: -10px;

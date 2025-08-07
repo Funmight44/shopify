@@ -49,7 +49,7 @@ const Header = () => {
                 <div className="icons">
                      <Link to="/" className="Link"><i class="bi bi-balloon-heart" ></i></Link> 
                      <div className="cart-link">
-                        {isAuthenticated ? (<><Link to="/cart" className="Link cart-icon-with-badge"> <i class="bi bi-cart"></i></Link>
+                        {isAuthenticated ? (<><Link to="/cart" className="cart-icon-with-badge"> <i class="bi bi-cart"></i></Link>
                             <span className="cart-badge">{cart.length}</span>  </>):
                         (<i class="bi bi-cart" onClick={() => loginWithRedirect()}></i>)}
                      </div>       
