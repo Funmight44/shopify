@@ -1,5 +1,5 @@
 import { FaTruckMoving } from "react-icons/fa";
-import { Link, useNavigate, useSearchParams } from "react-router";
+import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 import { useState } from "react";
 import { useCart } from "../context";
@@ -55,7 +55,7 @@ const Header = () => {
                 <div className="nav-bar">
                     <Link to="/" className="Link"><p>Home</p></Link>
                     <Link to="/products" className="Link"><p>Products</p></Link>
-                    <Link to="/about" className="Link"><p>About</p></Link>
+                    {/* <Link to="/about" className="Link"><p>About</p></Link> */}
                     <Link to="/contact" className="Link"><p>Contact</p></Link>
                 </div>
                 <div className="log-cont">

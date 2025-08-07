@@ -108,6 +108,10 @@ nav .icons .Link{
   position: relative;
 }
 
+.cart-link .Link{
+  text-decoration: none;
+}
+
 .icons span{
   position: absolute;
   top: 80px;
@@ -638,7 +642,16 @@ footer h2{
     text-transform: uppercase;
     font-weight: 600;
     color: #010f1c;
+    cursor: pointer;
 }
+
+.category ul li:hover{
+  background-color: #c5585f;
+  padding: 5px;
+  color: #fff;
+  border-radius: 5px;
+}
+
  .category ul{
   margin-top: 10px;
 }
@@ -697,6 +710,11 @@ footer h2{
 
   .product-section .product-box{
     margin-left: 10px;
+  }
+
+  .category ul li:hover{
+    background-color: transparent;
+    color: #c5585f;
   }
 }
 
@@ -845,7 +863,7 @@ footer h2{
   font-size: 18px;
 }
 
-.cartCard .removeCart-btn, .cart-btns .clear-btn, .order-btn{
+.cartCard .removeCart-btn, .cart-btns .clear-btn, .order-btn, .order-btn-disable{
   border: 0;
   outline: 0;
   padding: 10px 20px;
@@ -876,6 +894,11 @@ footer h2{
     color: #fff;
 }
 
+.cart-btns .order-btn-disable{
+  background-color: #555;
+  color: #fff;
+}
+
 
 
 .empty-cart{
@@ -898,11 +921,11 @@ footer h2{
 }
 
 .empty-cart .Link{
-  background-color: #f8a8ad;
+  background-color: #c5585f;
   padding: 10px 20px;
   border-radius: 10px;
   font-size: 16px;
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -916,7 +939,7 @@ footer h2{
   }
 
   .cartCard h4{
-    font-size: 17px;
+    font-size: 15px;
   }
 
   .cartCard img{
@@ -924,9 +947,13 @@ footer h2{
     height: 100px;
   }
 
-  .cartCard .removeCart-btn, .cart-btns .clear-btn, .order-btn{
-    padding: 8px 12px;
-    font-size: 15px;
+  .cartCard .removeCart-btn, .cart-btns .clear-btn, .order-btn, .order-btn-disable{
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .cartCard p{
+    font-size: 12px;
   }
 }
 

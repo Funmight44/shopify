@@ -5,6 +5,8 @@ import UseTitle from "../../components/useTitle";
 
 const Products = () => {
   const [products, setProducts] = useState(productData);
+  const [categoryToggle, setCategoryTogle] = useState(false)
+
   UseTitle("Product")
 
   const filterProducts = (category) => {
@@ -24,18 +26,18 @@ const Products = () => {
         <div className="container">
           <div className="filter">
             <div className="category">
-              <h3>categories</h3>
-              <ul>
+              <h3 onClick={() => setCategoryTogle(!categoryToggle)}>categories <i className="bi bi-list"></i> </h3>
+              {categoryToggle && <ul>
                 <li onClick={showAllProducts}>All Products</li>
                 <li onClick={() => filterProducts("phone")}>Phones</li>
                 <li onClick={() => filterProducts("laptop")}>Laptops</li>
                 <li onClick={() => filterProducts("headphones")}>Headphones</li>
-              </ul>
+              </ul>}
             </div>
           </div>
           <div className="product-box">
             {products.map((item) => (
-              <Card key={item.id} item={item} />
+              <Card key={item.id} item={item}/>
             ))}
           </div>
         </div>

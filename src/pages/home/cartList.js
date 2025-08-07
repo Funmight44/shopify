@@ -25,10 +25,12 @@ const CartList = () => {
                 <p>${item.price}</p>
                 <button className="removeCart-btn" onClick={() => removeFromCart(item.id)}>Remove</button>
             </div>) )}
+
                 <p>Total: {total}  </p>
             <div className="cart-btns"> 
                 <button className="clear-btn" onClick={clearCart}>Clear Cart</button>
-                <button className="order-btn"onClick={() => setCheckout(!checkout)}>Place Order</button>
+                {cart.length === 0 ? <button disabled className="order-btn-disable"onClick={() => setCheckout(!checkout)}>Place Order</button>:
+                <button className="order-btn"onClick={() => setCheckout(!checkout)}>Place Order</button>}
             </div>
             {checkout && <CheckOut/>}
         </section>

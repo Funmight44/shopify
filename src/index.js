@@ -11,17 +11,19 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Auth0Provider
     domain="dev-7mxdre47q4grkp2o.us.auth0.com"
-    clientId="Je2TJNA2EUEWDqiDSbUEwp4b80fSXezD"
+    clientId="Je2TJNA2EUEWDqiDSbUEwp4b80fSXezDyour-client-id"
     authorizationParams={{
-      redirect_uri: window.location.origin
-    }}>
-      <CartProvider>
+      redirect_uri: "https://shopify001.netlify.app"
+    }}
+  >
+    <CartProvider>
         <BrowserRouter>
            <App />
         </BrowserRouter>
       </CartProvider>
-       
-  </Auth0Provider>,
+</Auth0Provider>
+
+    
 
 );
 

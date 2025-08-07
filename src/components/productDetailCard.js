@@ -45,9 +45,9 @@ const ProductDetailCard = () => {
         </div>
 
         <div className="quantity-btns">
-          <button className="plus-btn" onClick={increase}><i class="bi bi-plus"></i></button>
-          <h3>{quantity}</h3>
           <button className="minus-btn" onClick={decrease}><i class="bi bi-dash"></i></button>
+          <h3>{quantity}</h3>
+          <button className="plus-btn" onClick={increase}><i class="bi bi-plus"></i></button>
         </div>
 
         <div className="action-buttons">
