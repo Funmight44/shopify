@@ -11,7 +11,7 @@ const Card = ({item}) => {
                         <div className="img-Box">
                              <Link to={`/product/${item.id}`}><img src={item.image} alt="img"/></Link>
                             <div className="product-icons">
-                                {isAuthenticated ? <i class="bi bi-cart" onClick={() => addToCart(item)}></i> :
+                                {isAuthenticated ? <Link to="/cart"><i class="bi bi-cart"></i></Link> :
                                  <i class="bi bi-cart" onClick={() => loginWithRedirect()} ></i> }
                                 <Link to={`/product/${item.id}`}><i class="bi bi-eye"></i></Link>
                                 <i class="bi bi-heart"></i>

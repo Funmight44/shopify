@@ -51,7 +51,7 @@ const ProductDetailCard = () => {
         </div>
 
         <div className="action-buttons">
-          <Link to="/cart"><button className="add-btn" onClick={() => addToCart(products)}>🛒 Add {quantity} to Cart</button></Link>
+          <button className="add-btn" onClick={() => addToCart(products)}>🛒 Add {quantity} to Cart</button>
           <button className="remove-btn" onClick={() => removeFromCart(products.id)}>🗑️ Remove</button>
         </div>
       </div>
