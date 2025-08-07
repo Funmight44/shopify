@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Auth0Provider
     domain="dev-7mxdre47q4grkp2o.us.auth0.com"
-    clientId="Je2TJNA2EUEWDqiDSbUEwp4b80fSXezDyour-client-id"
+    clientId="Je2TJNA2EUEWDqiDSbUEwp4b80fSXezD"
     authorizationParams={{
       redirect_uri: "https://shopify001.netlify.app"
     }}
