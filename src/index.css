@@ -989,6 +989,8 @@ footer h2{
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
   border-radius: 10px;
   padding: 20px;
+
+  position: relative;
 }
 
 .checkout-detail form{
@@ -1028,6 +1030,15 @@ footer h2{
   padding: 10px 20px;
   cursor: pointer;
 }
+
+.checkout-detail p{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 20px;
+  cursor: pointer;}
+
+
 
 @media (max-width: 768px){
   .checkout-detail form div{

@@ -32,7 +32,7 @@ const CartList = () => {
                 {cart.length === 0 ? <button disabled className="order-btn-disable"onClick={() => setCheckout(!checkout)}>Place Order</button>:
                 <button className="order-btn"onClick={() => setCheckout(!checkout)}>Place Order</button>}
             </div>
-            {checkout && <CheckOut/>}
+            {checkout && <CheckOut setCheckout={setCheckout}/>}
         </section>
      );
 }

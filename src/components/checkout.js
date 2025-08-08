@@ -2,7 +2,7 @@ import { useNavigate } from "react-router";
 // import { useCart } from "../context";
 import { useState } from "react";
 
-const CheckOut = () => {
+const CheckOut = ({setCheckout}) => {
     // const {cart} = useCart();
     const navigate = useNavigate();
     const [formData, setFormData] = useState({
@@ -30,7 +30,9 @@ const CheckOut = () => {
 
     return ( 
         <div className="modal-overLay">
+            
             <div className="checkout-detail">
+                <p className="close-btn" onClick={() => setCheckout(false)}> <i class="bi bi-cross"></i></p>
                 <h4>Checkout</h4>
                 <form onSubmit={handleSubmit}>
                   <div>
