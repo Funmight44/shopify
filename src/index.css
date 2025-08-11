@@ -971,7 +971,151 @@ footer h2{
 
 /* checkout style */
 
-.modal-overLay{
+/* Overlay background */
+.modal-overLay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Checkout container */
+.checkout-detail {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 400px;
+  max-width: 90%;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  animation: slideIn 0.3s ease-in-out;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 1.5rem;
+  color: #444;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.close-btn:hover {
+  color: crimson;
+}
+
+/* Heading */
+.checkout-detail h4 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Form styles */
+.checkout-detail form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.checkout-detail form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-detail label {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.checkout-detail input {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.checkout-detail input:focus {
+  border-color: #007bff;
+}
+
+/* Button */
+.checkout-detail button {
+  padding: 0.7rem;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.checkout-detail button:hover {
+  background: #0056b3;
+}
+
+/* Animation */
+@keyframes slideIn {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* ====== MEDIA QUERIES ====== */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .checkout-detail {
+    width: 80%;
+    padding: 1.5rem;
+  }
+
+  .checkout-detail h4 {
+    font-size: 1.2rem;
+  }
+
+  .checkout-detail button {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .checkout-detail {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .checkout-detail h4 {
+    font-size: 1rem;
+  }
+
+  .checkout-detail label {
+    font-size: 0.85rem;
+  }
+
+  .checkout-detail input {
+    font-size: 0.85rem;
+  }
+
+  .checkout-detail button {
+    font-size: 0.85rem;
+    padding: 0.6rem;
+  }
+
+  .close-btn {
+    font-size: 1.2rem;
+  }
+}
+
+/* .modal-overLay{
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.24);
@@ -1055,7 +1199,7 @@ footer h2{
     width: 250px;
   }
 }
-
+ */
 
 /* order success style */
 .order-success {

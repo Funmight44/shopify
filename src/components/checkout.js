@@ -30,12 +30,12 @@ const CheckOut = ({setCheckout}) => {
 
     return ( 
         <div className="modal-overLay">
-            
             <div className="checkout-detail">
-                <p className="close-btn" onClick={() => setCheckout(false)}> <i class="bi bi-cross"></i></p>
+                <p className="close-btn" onClick={() => setCheckout(false)}> <i class="bi bi-x"></i></p>
                 <h4>Checkout</h4>
                 <form onSubmit={handleSubmit}>
                   <div>
+                    <p>Hello</p>
                     <label> Full Name  </label>  
                     <input type="text" name="fullName" value={formData.fullName} onChange={handleChange}/>
                   </div>
