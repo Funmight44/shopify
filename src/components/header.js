@@ -70,8 +70,8 @@ const Header = () => {
                     <Link to="/contact" className="Link"><p>Contact</p></Link>
                 </div>
                 <div className="log-cont">
-                    {isAuthenticated ? <i class="bi bi-box-arrow-in-right" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}></i>
-                      : <i class="bi bi-box-arrow-in-left" onClick={() => loginWithRedirect()}></i>}   
+                    {isAuthenticated ? <i class="bi bi-box-arrow-in-right" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>logout</i>
+                      : <i class="bi bi-box-arrow-in-left" onClick={() => loginWithRedirect()}>login</i>}   
                 </div>
             </div>
         </header>
