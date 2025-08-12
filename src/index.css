@@ -190,6 +190,10 @@ header .bottom-nav{
   top: 50px;
   right: 15px;
 }
+
+.bottom-nav .log-cont{
+  font-size: 15px;
+}
 }
 
 /* homepage style */

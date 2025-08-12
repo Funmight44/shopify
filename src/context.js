@@ -34,7 +34,7 @@ export const CartProvider = ({children}) => {
             const updatedCart = cart.filter((item) => item.id !== id);
             setCart(updatedCart);
             localStorage.setItem("cart", JSON.stringify(updatedCart)) //keep storage in syn
-            alert("Removed")
+            alert("Removed from cart")
         }
 
 
