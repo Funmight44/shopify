@@ -29,7 +29,7 @@ const Header = () => {
      }, [isAuthenticated, setCart])
 
 
-    const totalQuantity = cart.reduce((total, item) => total + item.quantity, 0)
+    // const totalQuantity = cart.reduce((total, item) => total + item.quantity, 0)
 
 
     return ( 
@@ -60,7 +60,7 @@ const Header = () => {
                      <Link to="/" className="Link"><i class="bi bi-balloon-heart" ></i></Link> 
                      <div className="cart-link">
                         {isAuthenticated ? (<><Link to="/cart" className="cart-icon-with-badge"> <i class="bi bi-cart"></i></Link>
-                            <span className="cart-badge">{totalQuantity}</span>  </>):
+                            <span className="cart-badge">{cart.length}</span>  </>):
                         (<i class="bi bi-cart" onClick={() => loginWithRedirect()}></i>)}
                      </div>       
                 </div>
