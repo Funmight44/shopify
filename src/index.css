@@ -937,7 +937,7 @@ footer h2{
 }
 
 .empty-cart .Link{
-  background-color: #c5585f;
+  border: 1px solid #d32f2f;
   padding: 10px 20px;
   border-radius: 10px;
   font-size: 16px;
